@@ -15,7 +15,7 @@ export function Main() {
   
   return(
     <>
-      <MainImg src="http://www.prosangue.sp.gov.br/uploads/banners/Banner%20site%20com%20postit.jpg" alt="Image" />
+      {/* <MainImg src="http://www.prosangue.sp.gov.br/uploads/banners/Banner%20site%20com%20postit.jpg" alt="Image" /> */}
 
       <ContentGroup>
         <ContentBox>
