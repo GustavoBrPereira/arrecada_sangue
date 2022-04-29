@@ -6,10 +6,8 @@ export function Header() {
     <>
       <TopHeader>
         <TopHeaderText sizeIsSmall>Entre em contato conosco: </TopHeaderText>
-        <InstagramIcon
-          // onClick={}
-        /> 
-        <FacebookIcon />
+        <a href="https://www.instagram.com/arrecadasangue22/"><InstagramIcon /></a>
+        <a href="https://www.facebook.com/Arrecada-Sangue-2022-106280258721144/"><FacebookIcon /></a>
       </TopHeader>
       <MainHeader />
     </>

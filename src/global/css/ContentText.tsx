@@ -7,7 +7,7 @@ interface ContentTextProps {
 export const ContentText = styled.p<ContentTextProps>`
   color: #000;
   font-family: 'Bahnschrift';
-  font-size: 16px;
+  font-size: ${props => props.isSelected ? '22px' : '16px'};
   font-weight: 500;
 
   padding: 0;

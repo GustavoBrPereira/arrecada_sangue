@@ -1,4 +1,6 @@
+import { ContentText, Title } from '@/global/css';
 import styled from 'styled-components'
+import { ContentSelected } from '../ContentSelected';
 
 export const ContentGroup = styled.div`
   width: 100%;
@@ -13,6 +15,7 @@ export const ContentGroup = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 
 export const ContentBox = styled.div`
   width: 300px;
@@ -30,8 +33,8 @@ export const ContentBox = styled.div`
 
   overflow-y: auto;
 
-  &:hover {
+  /* &:hover {
     transform: scale(1.1);
     cursor: pointer;
-  }
+  } */
 `;
