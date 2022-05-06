@@ -11,8 +11,22 @@ export const TopHeader = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 
   padding: 0px 150px;
+
+  div {
+    height: inherit;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a {
+    color: #fff;
+  }
 `;
 
 export const TopHeaderText = styled(Text)`
