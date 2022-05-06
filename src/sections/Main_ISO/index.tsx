@@ -16,15 +16,15 @@ export function MainISO() {
 
         <ul>
           <ListItem>
-            <b>6.1.</b> Ações para tratar riscos e oportunidades: Com os riscos e oportunidades identificados, o próximo passo é definir como a gestão tratará cada um destes itens, na busca de mais eficácia, já que elimina necessidades de ações corretivas.
+            Ações para tratar riscos e oportunidades: Com os riscos e oportunidades identificados, o próximo passo é definir como a gestão tratará cada um destes itens, na busca de mais eficácia, já que elimina necessidades de ações corretivas.
           </ListItem>
         
           <ListItem>
-            <b>6.2.</b> Objetivos da qualidade e planejamento para atingi-los: É importante destacar que estes objetivos devem ser comunicados aos colaboradores e alinhados com as políticas de gestão. Da mesma forma, devem ser mensuráveis e monitorizados constantemente.
+            Objetivos da qualidade e planejamento para atingi-los: É importante destacar que estes objetivos devem ser comunicados aos colaboradores e alinhados com as políticas de gestão. Da mesma forma, devem ser mensuráveis e monitorizados constantemente.
           </ListItem>
         
           <ListItem>
-            <b>6.3.</b> Planejamento das alterações: Planejar as devidas alterações, comunicando à equipe e alinhando com os processos de “risk thinking” (pensamento de risco).
+            Planejamento das alterações: Planejar as devidas alterações, comunicando à equipe e alinhando com os processos de “risk thinking” (pensamento de risco).
           </ListItem>
         </ul>
 
@@ -34,7 +34,7 @@ export function MainISO() {
 
         <ul>
           <ListItem>
-            <b>7.1.</b> Recursos: Gestão dos recursos para o atendimento da norma e das mudanças a ela inerentes.
+            Recursos: Gestão dos recursos para o atendimento da norma e das mudanças a ela inerentes.
           </ListItem>
         </ul>
       </ContentContainer>
