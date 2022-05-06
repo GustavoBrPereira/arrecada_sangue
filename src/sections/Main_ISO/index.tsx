@@ -36,6 +36,14 @@ export function MainISO() {
           <ListItem>
             Recursos: Gestão dos recursos para o atendimento da norma e das mudanças a ela inerentes.
           </ListItem>
+          
+          <ListItem>
+            Competências: Posicionar cada colaborador a atuar de acordo com a sua competência.
+          </ListItem>
+          
+          <ListItem>
+            Conscientização: Definir que todos estejam de acordo e cientes com as necessidades de mudanças e as políticas demandadas pela norma.
+          </ListItem>
         </ul>
       </ContentContainer>
     </ContentSelectedContainer>
