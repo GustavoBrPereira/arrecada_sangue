@@ -3,8 +3,7 @@ import { Text } from '@/global/css'
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export const TopHeader = styled.div`
-  width: 100%;
-  max-width: 100vw;
+  width: (100vw - 150px);
   height: 35px;
 
   background-color: #9B0107;
@@ -17,7 +16,7 @@ export const TopHeader = styled.div`
 `;
 
 export const TopHeaderText = styled(Text)`
-  font-size: ${props => props.sizeIsSmall ? '15px' : '15px'};
+  font-size: 15px;
 `;
 
 export const InstagramIcon = styled(FaInstagram)`

@@ -19,4 +19,7 @@ export const ContentSelected = styled.div`
   background-color: #FFF;
 
   padding: 0px 20px;
+
+  overflow-y: auto;
+
 `;

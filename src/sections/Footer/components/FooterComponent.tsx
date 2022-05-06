@@ -6,4 +6,13 @@ export const FooterComponent = styled.div`
   height: 150px;
 
   background-color: #700201;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 130px;
+  }
 `;

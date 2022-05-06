@@ -6,50 +6,62 @@ import { useState } from "react";
 
 
 export function Main() {
+  const [contentToShow, setContentToShow] = useState(data.projeto)
 
   // @ts-ignore
-  const contents = JSON.stringify(data.objetivo.content).replace(/"/g,'').split(/\\n/g)
+  const contents = JSON.stringify(contentToShow.content).replace(/"/g,'').split(/\\n/g)
   
 
 
+  const imgUrl = `https://hospital-luziania.org.br/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-25-at-15.53.01.jpeg`
   
   return(
     <>
-      {/* <MainImg src="http://www.prosangue.sp.gov.br/uploads/banners/Banner%20site%20com%20postit.jpg" alt="Image" /> */}
+      <MainImg src={imgUrl} alt="Image" />
 
       <ContentGroup>
-        <ContentBox>
-          <Title isSelected={false}>Sobre</Title>
+        <ContentBox onClick={
+          () => setContentToShow(data.projeto)
+        }>
+          <Title isSelected={false}>
+            {data.projeto.simple_tilte}
+          </Title>
+
           <ContentText>
-            {`Evento promovido por um grupo de  alunos do curso de Análise e desenvolvimento de Sistemas com o intuito  de promover e incentivar a doação de sangue entre os alunos da instituição de ensino, tendo como recompensa horas complementares.
-Visando assim, arrecadar um número considerável de bolsas de sangue e ajudar a salvar vidas.`}
+            {data.projeto.summary}
           </ContentText>
         </ContentBox>
         
-        <ContentBox>
-          <Title isSelected={false}>Pró-Sangue</Title>
+        <ContentBox onClick={
+          () => setContentToShow(data.org)
+        }>
+          <Title isSelected={false}>
+            {data.org.simple_tilte}
+          </Title>
+
           <ContentText>
             {data.org.summary}
           </ContentText>
         </ContentBox>
 
-        {/* <ContentBox>
-          <Title isSelected={false}>Objetivo</Title>
+        <ContentBox onClick={
+          () => setContentToShow(data.objetivo)
+        }>
+          <Title isSelected={false}>
+            {data.objetivo.simple_tilte}
+          </Title>
+
           <ContentText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            {data.objetivo.summary}
           </ContentText>
-        </ContentBox> */}
+        </ContentBox>
       </ContentGroup>
       
       <ContentSelectedContainer>
         <ContentSelected>
           
           <Title isSelected={true}>{
-            data.objetivo.full_title
+            contentToShow.full_title
           }</Title>
 
           {contents.map(content => (

@@ -12,4 +12,5 @@ export const ContentText = styled.p<ContentTextProps>`
 
   padding: 0;
   margin: ${props => props.isSelected ? '0' : '0 15px'};
+
 `;

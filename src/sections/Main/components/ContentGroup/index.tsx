@@ -33,8 +33,8 @@ export const ContentBox = styled.div`
 
   overflow-y: auto;
 
-  /* &:hover {
+  &:hover {
     transform: scale(1.1);
     cursor: pointer;
-  } */
+  }
 `;
